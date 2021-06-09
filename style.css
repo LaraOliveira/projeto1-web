@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  -- orange: #ffa067;
+  -- purple: #5843be;
+  -- red: #fe7086;
+  -- border-radius: 10px;
+  -- border: 0.5px solid lightgrey;
+}
+
+body, html{
+  height: 100vh;
+}
+
+#container{
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 6fr 3fr;
+  grid-template-areas:
+    "n m p";
+}
+
+/* Estilo da navegação */
+#nav{
+  background-color: #f1f3f6;
+  display: grid;
+  grid-area: n;
+  grid-template-rows: repeat(8, 1fr);
+  place-items: center;
+}
+
+#logo{
+  grid-row: 1 / 3;
+}
+#logo p{
+  color: #ff4500;
+  font-size: 2em;
+  font-weight: bold;
+  width: 70px;
+  height: 70px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2),
+  -5px -5px 8px rgba(255, 255, 255, 0.6),
+  inset 3px 3px 4px rgba(255, 255, 255, 0.8),
+  inset -3px -3px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  width: 45px;
+  height: 45px;
+  opacity: 0.4;
+  padding: 10px;
+
+}
+.active{
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  box-shadow:
+    inset -3px -3px 4px rgba(255, 255, 255, 0.8),
+    inset 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+.home{
+  grid-row: 3 / 4;
+}
+.user{
+  grid-row: 4 / 5;
+}
+.message{
+  grid-row: 5 / 6;
+}
+
+/* Estilo do corpo */
+
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgrey;
+  color: #ffa067;
+  text-align: center;
+}

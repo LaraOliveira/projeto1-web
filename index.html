@@ -5,7 +5,6 @@
     <title>Projeto I</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ac384771cb.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   </head>
@@ -14,12 +13,12 @@
       <!-- Barra de navegação -->
       <div id="nav">
         <div id="logo"><p>W.</p></div>
-        <a href="#"><img src="imgs\home.png" alt="home" class="btn active"></a>
-        <a href="#"><img src="imgs\user.png" alt="user" class="btn active"></a>
+        <a href="index.html"><img src="imgs\home.png" alt="home" class="btn active"></a>
+        <a href="sobre.html"><img src="imgs\user.png" alt="user" class="btn active"></a>
         <a href="#"><img src="imgs\message.png" alt="message" class="btn active"></a>
-
       </div>
-      <!-- Corpo -->
+
+      <!-- Corpo principal -->
       <div id="main">
         <h2>Progresso da Disciplina</h2>
         <section class="top">
@@ -29,7 +28,7 @@
             <p class="subTitle">HTML e CSS</p>
             <div class="imgProfile">
               <img src="imgs/profile-imgs.png" alt="profile-imgs">
-              <a href="#">Começar a responder</a>
+              <a href="#">Começar</a>
             </div>
           </div>
           <div class="atividades todo">
@@ -37,13 +36,14 @@
             <p class="todoTitle">Atividades</p>
             <p class="todoSub">Para o assunto <br>de hoje</p>
           </div>
-          <div class="leitura todo"></div>
+          <div class="leitura todo">
             <i class="far fa-check-circle"></i>
             <p class="todoTitle">Leituras</p>
             <p class="todoSub">Para as próximas <br>provas</p>
+            </div>
         </section>
 
-        <section class="mid"></section>
+        <section class="mid">
           <div class="grupo">
             <div class="grupoHeader">
               <p class="Title">Informações do grupo <br>
@@ -63,20 +63,21 @@
           </div>
           <div class="progresso">
             <div class="progressoTitle">
-              <img width="45px" src="imgs/coding.png" alt="coding">
-              <p class="largeTitle">Desenvolvimento de Software
-              <br>para Web</p>
+              <img src="imgs/coding.png" alt="coding">
+              <p class="largeTitle">Aprendendo a <br>
+              Codificar</p>
             </div>
             <div class="barraProgresso">
               <p>40%</p>
               <progress value="40" max="100"></progress>
             </div>
           </div>
+          </section>
 
         <section class="bot">
           <div class="botBook bot">
             <div>
-              <i class="fas fa-book"></i>
+              <i class="fas fa-book icon-circle"></i>
               <p class="Title">Livros <br>
               <span class="subTitle">+ Lista de exercícios </span></p>
             </div>
@@ -84,9 +85,9 @@
           </div>
           <div class="botAvaliacoes bot">
             <div>
-              <i class="fas fa-file-alt"></i>
-              <p class="Title">Avaliações e Exercícios <br>
-              <span class="subTitle">+ Nota final e correção </span></p>
+              <i class="fas fa-file-alt icon-circle"></i>
+              <p class="Title">Avaliações <br>
+              <span class="subTitle">+ Notas e correção </span></p>
             </div>
             <i class="fas fa-angle-right"></i>
           </div>
@@ -96,7 +97,7 @@
       <!-- Página de Recados -->
       <div id="coment">
         <div class="pic">
-          <img width="200px" src="imgs/content.png" alt="content">
+          <img src="imgs/content.png" alt="content">
           <p class="largeTitle nome">Deixe o seu recado!</p>
         </div>
         <div class="comentSection">

@@ -115,6 +115,7 @@ section.top{
   grid-template-columns: 3fr 1fr 1fr;
   column-gap: 25px;
   align-content: start;
+  padding: 25px;
 }
 
 .prova{
@@ -164,6 +165,7 @@ section.top{
 section.mid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 25px;
 }
 
 section.mid .grupo{
@@ -228,6 +230,7 @@ section.bot{
   grid-template-columns: repeat(2, 1fr);
   column-gap: 25px;
   align-items: center;
+  padding: 25px;
 }
 
 .bot{
@@ -278,11 +281,38 @@ section.bot{
 
 .pic img{
   width: 110px;
-  border-radius: 50%
 }
 
 .pic img, .pic .largeTitle, .pic .subTitle{
   margin: 5px 0px;
+}
+
+.avatar img{
+  width: 110px;
+  border-radius: 50%
+}
+
+section.autorInfo{
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
+  column-gap: 25px;
+  align-content: start;
+}
+
+.avatar{
+  background-color: lightgrey;
+  border-radius: var(--borderRadius);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 #footer {

@@ -315,6 +315,22 @@ section.autorInfo{
   padding: 10px;
 }
 
+section.contatoInfo{
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  column-gap: 25px;
+  align-content: flex-start;
+}
+
+.infoContato{
+  background-color: lightgrey;
+  border-radius: var(--borderRadius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 #footer {
   position: fixed;
   left: 0;

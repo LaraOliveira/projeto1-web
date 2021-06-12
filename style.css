@@ -317,18 +317,23 @@ section.autorInfo{
 
 section.contatoInfo{
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-columns: 6fr 1fr 1fr;
   column-gap: 25px;
-  align-content: flex-start;
+  align-content: start;
 }
 
 .infoContato{
-  background-color: lightgrey;
+  background-color: var(--purple);
   border-radius: var(--borderRadius);
   padding: 20px;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.infoContato a{
+  color: #ffffff;
 }
 
 #footer {

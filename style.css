@@ -292,6 +292,7 @@ section.bot{
   border-radius: 50%
 }
 
+/*Estilo da página sobre*/
 section.autorInfo{
   display: grid;
   grid-template-columns: 6fr 1fr 1fr;
@@ -315,6 +316,7 @@ section.autorInfo{
   padding: 10px;
 }
 
+/*Estilo da página de contato*/
 section.contatoInfo{
   display: grid;
   grid-template-columns: 6fr 1fr 1fr;
@@ -336,6 +338,7 @@ section.contatoInfo{
   color: #ffffff;
 }
 
+/*Estilo do rodapé*/
 #footer {
   position: fixed;
   left: 0;
